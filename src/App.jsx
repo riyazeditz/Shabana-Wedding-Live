@@ -549,13 +549,15 @@ function GuestGallery({ weddingId }) {
               className="lightbox-image"
             />
             <a
-              className="btn btn-primary"
-              href={publicPhotoUrl(selectedPhoto.storage_path)}
-              download={selectedPhoto.filename}
-            >
-              <Download size={16} className="icon" />
-              Download original
-            </a>
+  className="btn btn-primary"
+  href={publicPhotoUrl(selectedPhoto.storage_path)}
+  target="_blank"
+  rel="noopener noreferrer"
+  download={selectedPhoto.filename}
+>
+  <Download size={16} className="icon" />
+  Download original
+</a>
           </div>
         </div>
       ) : null}
